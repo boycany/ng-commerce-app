@@ -1,4 +1,10 @@
-<h1 class="text-2xl p-6">
-  Hello world!
-</h1>
-<router-outlet />
+<div class="container">
+  <h1>User Management Demo</h1>
+
+  <div class="button-row">
+    <button mat-flat-button color="primary" (click)="openCreateUser()">Create New User</button>
+    <button mat-stroked-button (click)="openEditProfile()">Edit Profile</button>
+    <button mat-stroked-button (click)="openChangePassword()">Change Password</button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
